@@ -1,0 +1,31 @@
+.q1-box {
+  border: 1px solid $black;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+/* Add your code after this line */
+.block-align {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  
+}
+
+.q1-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px 5px;
+  padding: 20;
+}
+
+
+@media screen and (max-width: 992px) {
+  div.block-align {
+    display: flex;
+    flex-direction: column;
+  }
+}

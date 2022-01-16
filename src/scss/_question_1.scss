@@ -1,0 +1,73 @@
+.general-wrapper {
+  position: relative;
+  .flex-wrapper {
+    position: relative;
+    background: white;
+    width: 80%;
+    min-height: 500px;
+    .wrapper1, .wrapper2, .wrapper3, .wrapper4{
+      border: 1px solid #000;
+      width: 30%;
+      padding: 10px;
+    }
+  }
+  .logo {
+    background: url("/assets/img/cdz_logo.jpg") no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Add your code after this line */
+
+.flex-wrapper{
+  margin: auto;
+}
+
+.wrapper1, .wrapper2, .wrapper3, .wrapper4 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+}
+
+.color-text-box {
+  color: #007712;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px); 
+  gap: 10px 10px;
+  grid-template-areas: 
+    "wrapper1 . wrapper2"
+    ". logo ."
+    "wrapper3 . wrapper4";
+
+}
+
+.wrapper1 {
+  grid-area: wrapper1;
+}
+
+.wrapper2 {
+  grid-area: wrapper2;
+}
+
+.wrapper3 {
+  grid-area: wrapper3;
+}
+
+.wrapper4 {
+  grid-area: wrapper4;
+}
+
+.logo {
+  grid-area: logo;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}

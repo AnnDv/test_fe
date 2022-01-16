@@ -1,0 +1,25 @@
+@import "variables";
+@import "general";
+@import "components";
+@import "helper";
+@import "contact";
+@import "footer";
+@import "modal";
+@import "question_1";
+@import "question_2";
+@import "question_3";
+
+.invalid-tooltip {
+    position: relative;
+    text-align: center;
+}
+
+.valid-tooltip {
+    position: relative;
+}
+
+.modal-button {
+    border-style: outset;
+    border-color: #b2b2b2;
+    border-radius: 10px;
+}

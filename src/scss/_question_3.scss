@@ -1,0 +1,37 @@
+.q2-wrapper {
+    background: $qbgcolor;
+
+    .q2-block {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background: $qblkcolor;
+    }
+
+    /* Add your code after this line */
+
+}
+
+.q2-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.q2-wrapper .q2-block {
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+.q2-block:nth-child(odd){
+    background-color: #00ff00;
+}
+
+@media only screen and (max-width: 768px) {
+    .q2-wrapper {
+        display: grid;
+        // grid-template-columns: auto auto;
+      
+    }
+}
